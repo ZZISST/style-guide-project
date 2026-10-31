@@ -11,6 +11,7 @@
 - [Оформление текста](formatting.md)
 - [Markdown](markdown.md)
 - [Специфические элементы](specific.md)
+- [Доступность текста](accessibility.md)
 - [Глоссарий](glossary.md)
 - [Шаблоны документов](doc-templates/index.md)
 - [Примеры](examples/index.md)
