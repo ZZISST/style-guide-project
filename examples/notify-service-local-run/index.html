@@ -986,22 +986,22 @@
 <li>Установите Docker 24 или новее.</li>
 <li>Склонируйте репозиторий сервиса:</li>
 </ul>
-<pre><code class="language-bash">git clone https://github.com/&lt;организация&gt;/notify-service.git
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;организация&gt;/notify-service.git
+</code></pre></div>
 <p>Где <code>&lt;организация&gt;</code> — имя организации на GitHub, в которой лежит репозиторий.</p>
 <h2 id="_2">Подготовить конфигурацию<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Перейдите в папку сервиса и скопируйте пример конфигурации:</p>
-<p><code>bash
-cd notify-service
-cp .env.example .env</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>notify-service
+cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+</code></pre></div>
 </li>
 <li>
 <p>Откройте файл <code>.env</code> и укажите значения переменных:</p>
-<p><code>bash
-DATABASE_URL=postgres://&lt;пользователь&gt;:&lt;пароль&gt;@localhost:5432/notify
-SMTP_HOST=&lt;адрес-smtp-сервера&gt;</code></p>
+<div class="highlight"><pre><span></span><code><span class="nv">DATABASE_URL</span><span class="o">=</span>postgres://&lt;пользователь&gt;:&lt;пароль&gt;@localhost:5432/notify
+<span class="nv">SMTP_HOST</span><span class="o">=</span>&lt;адрес-smtp-сервера&gt;
+</code></pre></div>
 <p>Где:</p>
 <ul>
 <li><code>&lt;пользователь&gt;</code> и <code>&lt;пароль&gt;</code> — учётные данные локальной базы данных;</li>
@@ -1013,25 +1013,25 @@ SMTP_HOST=&lt;адрес-smtp-сервера&gt;</code></p>
 <ol>
 <li>
 <p>Запустите базу данных:</p>
-<p><code>bash
-docker compose up -d postgres</code></p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>postgres
+</code></pre></div>
 </li>
 <li>
 <p>Запустите сервис:</p>
-<p><code>bash
-go run ./cmd/notify-service</code></p>
+<div class="highlight"><pre><span></span><code>go<span class="w"> </span>run<span class="w"> </span>./cmd/notify-service
+</code></pre></div>
 <p>Сервис выведет сообщение о запуске:</p>
-<p><code>text
-INFO notify-service started on :8080</code></p>
+<div class="highlight"><pre><span></span><code>INFO notify-service started on :8080
+</code></pre></div>
 </li>
 </ol>
 <h2 id="_4">Проверка результата<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>Отправьте запрос к методу проверки состояния:</p>
-<pre><code class="language-bash">curl http://localhost:8080/health
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8080/health
+</code></pre></div>
 <p>Сервис вернёт ответ:</p>
-<pre><code class="language-text">{&quot;status&quot;:&quot;ok&quot;}
-</code></pre>
+<div class="highlight"><pre><span></span><code>{"status":"ok"}
+</code></pre></div>
 <h2 id="_5">Возможные проблемы<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <table>
 <thead>

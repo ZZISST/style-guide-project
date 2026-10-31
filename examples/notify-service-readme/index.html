@@ -990,11 +990,11 @@
 <li>Docker 24 или новее — для локального запуска базы данных.</li>
 </ul>
 <h2 id="_3">Быстрый старт<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<pre><code class="language-bash">git clone https://github.com/&lt;организация&gt;/notify-service.git
-cd notify-service
-cp .env.example .env
-go run ./cmd/notify-service
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;организация&gt;/notify-service.git
+<span class="nb">cd</span><span class="w"> </span>notify-service
+cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+go<span class="w"> </span>run<span class="w"> </span>./cmd/notify-service
+</code></pre></div>
 <p>Где <code>&lt;организация&gt;</code> — имя организации на GitHub, в которой лежит репозиторий.</p>
 <p>Подробная инструкция — в документе <a href="../notify-service-local-run/">«Как запустить notify-service локально»</a>.</p>
 <h2 id="_4">Конфигурация<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
@@ -1042,11 +1042,11 @@ go run ./cmd/notify-service
 </table>
 <h2 id="_5">Проверка результата<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>Отправьте запрос к методу проверки состояния:</p>
-<pre><code class="language-bash">curl http://localhost:8080/health
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8080/health
+</code></pre></div>
 <p>Сервис вернёт ответ:</p>
-<pre><code class="language-text">{&quot;status&quot;:&quot;ok&quot;}
-</code></pre>
+<div class="highlight"><pre><span></span><code>{"status":"ok"}
+</code></pre></div>
 
 
 
