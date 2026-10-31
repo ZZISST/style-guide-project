@@ -41,6 +41,10 @@
          <lastmod>2026-10-31</lastmod>
     </url>
     <url>
+         <loc>https://zzisst.github.io/style-guide-project/doc-templates/readme-service/</loc>
+         <lastmod>2026-10-31</lastmod>
+    </url>
+    <url>
          <loc>https://zzisst.github.io/style-guide-project/doc-templates/reference/</loc>
          <lastmod>2026-10-31</lastmod>
     </url>
@@ -50,6 +54,14 @@
     </url>
     <url>
          <loc>https://zzisst.github.io/style-guide-project/examples/before-after/</loc>
+         <lastmod>2026-10-31</lastmod>
+    </url>
+    <url>
+         <loc>https://zzisst.github.io/style-guide-project/examples/notify-service-local-run/</loc>
+         <lastmod>2026-10-31</lastmod>
+    </url>
+    <url>
+         <loc>https://zzisst.github.io/style-guide-project/examples/notify-service-readme/</loc>
          <lastmod>2026-10-31</lastmod>
     </url>
 </urlset>
