@@ -1,0 +1,37 @@
+site_name: Стайлгайд документации
+site_description: Правила оформления технической документации
+site_url: https://zzisst.github.io/style-guide-project/
+repo_url: https://github.com/ZZISST/style-guide-project
+repo_name: ZZISST/style-guide-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Главная: index.md
+  - Тон и стиль: tone.md
+  - Орфография и пунктуация: spelling.md
+  - Оформление текста: formatting.md
+  - Markdown: markdown.md
+  - Специфические элементы: specific.md
+  - Глоссарий: glossary.md
+  - Шаблоны документов:
+      - doc-templates/index.md
+      - Инструкция: doc-templates/how-to.md
+      - Справочник: doc-templates/reference.md
+  - Примеры:
+      - examples/index.md
+      - До и после: examples/before-after.md
