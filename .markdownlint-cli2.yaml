@@ -15,4 +15,5 @@ config:
 ignores:
   - "site/**"
   - "node_modules/**"
+  - "report-screens/**"
   - ".github/pull_request_template.md"

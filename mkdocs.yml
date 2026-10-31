@@ -33,6 +33,9 @@ nav:
       - doc-templates/index.md
       - Инструкция: doc-templates/how-to.md
       - Справочник: doc-templates/reference.md
+      - README сервиса: doc-templates/readme-service.md
   - Примеры:
       - examples/index.md
       - До и после: examples/before-after.md
+      - README notify-service: examples/notify-service-readme.md
+      - Как запустить notify-service локально: examples/notify-service-local-run.md
